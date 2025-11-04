@@ -5,24 +5,25 @@
 
 ## Abstract (Summary)
 
----
 In this work we show that radial patterns enable wider depth-of-field lensless imaging, while also enabling efficient modeling of the lensless imaging system with full-aperture masks. This allows us to capture longer continuous scenes than previous approaches, with a competitive inference time and reconstruction quality.
 
 
-
+---
 ## Path to data
 
----
 The data for each of the experiments on the paper are as follows:
 
 * Section 4 (Analysis of PSF depth dependence from correlation): ```./data/psf/*```
-* Section 5 (MNIST digit reconstruction): [Link](https://drive.google.com/drive/folders/1A4Sk2m-QhhYObge7z7N8gauiP7tVqu-L?usp=sharing)
+* Section 5 (MNIST digit reconstruction): [Link](https://drive.google.com/drive/folders/1jGzla24lFX_K94enwyX0LOKufQZwySrF?usp=sharing)
 * Section 6: (QR codes reconstruction): [Coming soon]()
 * Section 7: (Artificially-extended convolution experiments): ```./data/monitor/*```, ```./data/two_pawns_sanken_multiexposureV2/*``` and ```./data/psfV2/*```
 
-## Code Usage
+Notes 1: MNIST digit dataset contains 101 images per depth (i.e., 1, 3, 5, 10, 40 cm) per mask type (i.e., restricted- and full-aperture radial masks). This totals to 1010 captures plus reference images (under the ```synthetic/``` folder).   
+
 
 ---
+## Code Usage
+
 The experiments for the artificially-extended PSF deconvolution with our full-aperture mask can be replicated by running the .sh files as:
 ```bash
 ./big_conv_prototype.sh
@@ -30,9 +31,20 @@ The experiments for the artificially-extended PSF deconvolution with our full-ap
 ```
 Results will be saved in a new folder ```./results/*``` for both prototype camera and simulated experiments.
 
-## Citation
+Testing on different data (e.g., other PSFs or captures for different systems):
+```bash
+psf_reso=512
+meas_reso=512
+iters=10000
+
+python big_conv.py --psf_path "path/to/psf" --meas_path "path/to/capture" --save_path "path/to/save" \ 
+--psf_reso $psf_reso --meas_reso $meas_reso --iters $iters
+```
+Change the flags to your preferred setting.
 
 ---
+## Citation
+
 Citation will be appropriately filled when the manuscript is published (currently accepted but not published)
 ```
 @article{Neto:25,
