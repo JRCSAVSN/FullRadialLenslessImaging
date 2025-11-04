@@ -14,10 +14,10 @@ In this work we show that radial patterns enable wider depth-of-field lensless i
 
 The data for each of the experiments on the paper are as follows:
 
-* Section 4 (Analysis of PSF depth dependence from correlation): ```./data/psf/*```
+* Section 4 (Analysis of PSF depth dependence from correlation): ```./data/prototype/psf/*```
 * Section 5 (MNIST digit reconstruction): [Link](https://drive.google.com/drive/folders/1jGzla24lFX_K94enwyX0LOKufQZwySrF?usp=sharing)
 * Section 6: (QR codes reconstruction): [Coming soon]()
-* Section 7: (Artificially-extended convolution experiments): ```./data/monitor/*```, ```./data/two_pawns_sanken_multiexposureV2/*``` and ```./data/psfV2/*```
+* Section 7: (Artificially-extended convolution experiments): ```./data/prototype/monitor/*```, ```./data/prototype/two_pawns_sanken_multiexposureV2/*``` and ```./data/prototype/psfV2/*```
 
 Notes 1: MNIST digit dataset contains 101 images per depth (i.e., 1, 3, 5, 10, 40 cm) per mask type (i.e., restricted- and full-aperture radial masks). This totals to 1010 captures plus reference images (under the ```synthetic/``` folder).   
 
@@ -25,6 +25,15 @@ Notes 1: MNIST digit dataset contains 101 images per depth (i.e., 1, 3, 5, 10, 4
 ---
 ## Code Usage
 
+### 1) Create environment (suggested):
+```bash
+conda create -n frli -y python=3.11
+conda activate frli
+pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128 
+pip install matplotlib==3.10.1 opencv-python==4.11.0.86 tqdm==4.67.1
+```
+
+### 2) Run big convolution experiments
 The experiments for the artificially-extended PSF deconvolution with our full-aperture mask can be replicated by running the .sh files as:
 ```bash
 ./big_conv_prototype.sh
