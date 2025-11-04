@@ -58,3 +58,12 @@ year = {2025},
 url = {}
 } 
 ```
+
+---
+## Partial code
+Our experiments used the ADMM code originally sourced (but later modified) from the [DiffuserCam-tutorial](https://github.com/Waller-Lab/DiffuserCam-Tutorial) repository.
+
+---
+## Licensing
+
+Our work is published under the OAPA (Open Access Publishing Agreement), thus with copyright of images from our paper being transferred to the Optical Publishing Group. But to the best of our knowledge, data can be reused in non-commercial applications with appropriate citation.
