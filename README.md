@@ -8,13 +8,7 @@
 ---
 In this work we show that radial patterns enable wider depth-of-field lensless imaging, while also enabling efficient modeling of the lensless imaging system with full-aperture masks. This allows us to capture longer continuous scenes than previous approaches, with a competitive inference time and reconstruction quality.
 
-[//]: # (![image]&#40;data/figs/OE_2025_psfcorr.pdf&#41;)
 
-<object data="data/figs/OE_2025_psfcorr.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="data/figs/OE_2025_psfcorr.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="data/figs/OE_2025_psfcorr.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
 
 ## Path to data
 
