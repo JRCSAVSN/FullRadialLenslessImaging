@@ -60,11 +60,13 @@ Citation will be appropriately filled when the manuscript is published (currentl
 @article{Neto:25,
 author = {Jose Reinaldo Cunha Santos A V Silva Neto and Hodaka Kawachi and Yasushi Yagi and Tomoya Nakamura},
 journal = {Opt. Express},
-number = {},
-volume = {],
-pages = {},
+number = {23},
+volume = {33],
+pages = {48112--48129},
 year = {2025},
-url = {}
+month = {Nov},
+url = {https://opg.optica.org/oe/abstract.cfm?URI=oe-33-23-48112},
+doi = {10.1364/OE.576474}
 } 
 ```
 
