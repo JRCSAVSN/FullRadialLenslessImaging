@@ -55,7 +55,7 @@ Change the flags to your preferred setting.
 ---
 ## Citation
 
-Citation will be appropriately filled when the manuscript is published (currently accepted but not published)
+Our work can be cited as:
 ```
 @article{Neto:25,
 author = {Jose Reinaldo Cunha Santos A V Silva Neto and Hodaka Kawachi and Yasushi Yagi and Tomoya Nakamura},
